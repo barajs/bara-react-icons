@@ -1,7 +1,7 @@
 {
   "name": "bara-react-icons",
   "license": "MIT",
-  "description": "BaraJS for React creative",
+  "description": "BaraJS Icons for React cross-platform application",
   "homepage": "https://barajs.dev",
   "repository": "https://github.com/barajs/bara-react-icons",
   "version": "0.0.0",
@@ -17,28 +17,43 @@
   ],
   "dependencies": {
     "bara": "2.2.0",
-    "fbemitter": "2.1.1",
-    "react-native-web": "0.11.2"
+    "bara-react": "2.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
     "@semantic-release/changelog": "3.0.2",
     "@semantic-release/git": "7.0.8",
+    "@storybook/addon-actions": "^5.0.10",
+    "@storybook/addon-links": "^5.0.10",
+    "@storybook/addon-storyshots": "5.0.10",
+    "@storybook/addons": "^5.0.10",
+    "@storybook/react": "5.0.10",
     "@types/fbemitter": "2.0.32",
     "@types/jest": "24.0.11",
     "@types/node": "11.13.5",
     "@types/react": "16.8.12",
-    "@types/react-dom": "16.8.3",
+    "@types/react-dom": "16.8.4",
     "@types/react-native": "0.57.42",
+    "@types/react-test-renderer": "16.8.1",
+    "@types/storybook__addon-actions": "^3.4.2",
+    "@types/storybook__addon-links": "3.3.4",
+    "@types/storybook__react": "4.0.1",
     "@typescript-eslint/typescript-estree": "1.6.0",
+    "awesome-typescript-loader": "5.2.1",
+    "babel-loader": "^8.0.5",
+    "cz-conventional-changelog": "^2.1.0",
     "react": "16.8.6",
+    "react-docgen-typescript-loader": "3.1.0",
     "react-dom": "16.8.6",
     "react-scripts": "2.1.8",
-    "semantic-release": "15.13.3",
+    "react-test-renderer": "16.8.6",
+    "semantic-release": "^15.13.12",
+    "ts-jest": "24.0.2",
     "tslint": "5.15.0",
     "tslint-config-airbnb": "5.11.1",
     "tslint-config-prettier": "1.18.0",
     "tslint-react": "4.0.0",
-    "typescript": "3.4.1"
+    "typescript": "3.4.4"
   },
   "peerDependencies": {
     "react": ">=16.8",
@@ -51,7 +66,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,5 +78,27 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "mapCoverage": true,
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
+    "testRegex": "(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  }
 }
