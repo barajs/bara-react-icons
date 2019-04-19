@@ -44,6 +44,7 @@
     "cz-conventional-changelog": "^2.1.0",
     "jest": "24.7.1",
     "react": "16.8.6",
+    "react-docgen-typescript-loader": "3.1.0",
     "react-dom": "16.8.6",
     "react-scripts": "2.1.8",
     "react-test-renderer": "16.8.6",
@@ -83,5 +84,22 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "mapCoverage": true,
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
+    "testRegex": "(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
   }
 }
