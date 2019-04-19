@@ -1,7 +1,7 @@
 {
   "name": "bara-react-icons",
   "license": "MIT",
-  "description": "BaraJS for React creative",
+  "description": "BaraJS Icons for React cross-platform application",
   "homepage": "https://barajs.dev",
   "repository": "https://github.com/barajs/bara-react-icons",
   "version": "0.0.0",
@@ -21,8 +21,13 @@
     "react-native-web": "0.11.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
     "@semantic-release/changelog": "3.0.2",
     "@semantic-release/git": "7.0.8",
+    "@storybook/addon-actions": "^5.0.10",
+    "@storybook/addon-links": "^5.0.10",
+    "@storybook/addons": "^5.0.10",
+    "@storybook/react": "^5.0.10",
     "@types/fbemitter": "2.0.32",
     "@types/jest": "24.0.11",
     "@types/node": "11.13.5",
@@ -30,10 +35,12 @@
     "@types/react-dom": "16.8.3",
     "@types/react-native": "0.57.42",
     "@typescript-eslint/typescript-estree": "1.6.0",
+    "babel-loader": "^8.0.5",
+    "cz-conventional-changelog": "^2.1.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "2.1.8",
-    "semantic-release": "15.13.3",
+    "semantic-release": "^15.13.12",
     "tslint": "5.15.0",
     "tslint-config-airbnb": "5.11.1",
     "tslint-config-prettier": "1.18.0",
@@ -51,7 +58,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,5 +70,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
