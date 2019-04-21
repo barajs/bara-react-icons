@@ -1,4 +1,4 @@
-import { useInit, useBarn, useTimerElapsed } from 'bara'
+import { useInit, useBarn, useTimerElapsed, setBarnState } from 'bara'
 
 import {
   nameOfTouchable,
@@ -7,11 +7,11 @@ import {
   useTouchableOpacityPress,
   useTextPress,
   nameOfText,
-} from '../../lib'
+} from 'bara-react'
 
-export function welcomeTrigger(setState: (key: string, value: any) => void) {
+export function welcomeTrigger() {
   useInit(() => {
-    setState('welcome', `Loading...`)
+    setBarnState('welcome', `Loading...`)
     useBarn('welcome', newMessage => {
     })
   })
@@ -21,7 +21,7 @@ export function welcomeTrigger(setState: (key: string, value: any) => void) {
       nameOf: nameOfTouchable('welcome-button'),
     },
     ({ name }) => {
-      setState('welcome', `You (${name}) are already welcomed!`)
+      setBarnState('welcome', `You (${name}) are already welcomed!`)
     },
   )
 
@@ -36,7 +36,7 @@ export function welcomeTrigger(setState: (key: string, value: any) => void) {
   )
 
   useTimerElapsed(5, () => {
-    setState('welcome', `Who are you?`)
+    setBarnState('welcome', `Who are you?`)
   })
 
   useBarn('welcome', newMessage => {
