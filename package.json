@@ -1,7 +1,7 @@
 {
   "name": "bara-react-icons",
   "license": "MIT",
-  "description": "BaraJS React vector icons for cross-platform!",
+  "description": "Bara React vector icons for cross-platform application!",
   "homepage": "https://barajs.dev",
   "repository": "https://github.com/barajs/bara-react-icons",
   "version": "0.0.0",
@@ -18,8 +18,7 @@
   "dependencies": {
     "bara": "2.3.1",
     "bara-react": "2.0.1",
-    "react-native-vector-icons": "6.4.2",
-    "react-native-web": "0.11.2"
+    "react-native-vector-icons": "6.4.2"
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.2",
@@ -42,8 +41,7 @@
     "typescript": "3.4.1"
   },
   "peerDependencies": {
-    "react": ">=16.8",
-    "react-dom": ">=16.8"
+    "react": ">=16.8"
   },
   "scripts": {
     "compile": "rm -rf dist && yarn compile:tsc",
