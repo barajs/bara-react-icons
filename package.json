@@ -4,7 +4,7 @@
   "description": "Bara React vector icons for cross-platform application!",
   "homepage": "https://barajs.dev",
   "repository": "https://github.com/barajs/bara-react-icons",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "module": "dist/index.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

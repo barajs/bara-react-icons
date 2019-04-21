@@ -1,3 +1,10 @@
+# 1.0.0 (2019-04-21)
+
+
+### Features
+
+* **icons:** add MaterialIcons and Octicons ([bf36cf8](https://github.com/barajs/bara-react-icons/commit/bf36cf8))
+
 # [2.0.0](https://github.com/barajs/bara-react/compare/v1.3.2...v2.0.0) (2019-04-15)
 
 
