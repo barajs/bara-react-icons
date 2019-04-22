@@ -5,7 +5,7 @@
   "homepage": "https://barajs.dev",
   "repository": "https://github.com/barajs/bara-react-icons",
   "version": "1.0.0",
-  "module": "dist/index.js",
+  "module": "es/index.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "publishConfig": {
@@ -13,6 +13,7 @@
   },
   "files": [
     "dist",
+    "es",
     "src/lib"
   ],
   "dependencies": {
@@ -44,8 +45,9 @@
     "react": ">=16.8"
   },
   "scripts": {
-    "compile": "rm -rf dist && yarn compile:tsc",
+    "compile": "rm -rf dist && yarn compile:tsc && yarn compile:tsc:es",
     "compile:tsc": "tsc -b ./tsconfig.lib.json",
+    "compile:tsc:es": "tsc -b ./tsconfig.libes.json",
     "compile:watch": "tsc -b ./tsconfig.lib.json -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
