@@ -17,7 +17,7 @@
     "src/lib"
   ],
   "dependencies": {
-    "bara": "2.3.1",
+    "bara": "2.5.0",
     "bara-react": "2.0.1",
     "react-native-vector-icons": "6.4.2"
   },
