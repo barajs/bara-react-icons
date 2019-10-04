@@ -36,7 +36,7 @@
     "react-scripts": "2.1.8",
     "semantic-release": "15.13.3",
     "tslint": "5.15.0",
-    "tslint-config-airbnb": "5.11.1",
+    "tslint-config-airbnb": "5.11.2",
     "tslint-config-prettier": "1.18.0",
     "tslint-react": "4.0.0",
     "typescript": "3.4.1"
