@@ -889,6 +889,15 @@
     "@bara/core" "^2.3.1"
     dot-prop "5.0.0"
 
+"@bara/barn@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@bara/barn/-/barn-2.5.0.tgz#07a88c29b50a12c7484bb8d787a73f21e5e99915"
+  integrity sha512-W5mujT8lGPErJqU7pUd7VkVoyEunL3iBW8zbUs65HAwSJ1HaIQueYzScT2ZCRlOZ4AbeVOhOxTPt/Lffc/c8iA==
+  dependencies:
+    "@bara/basics" "^2.5.0"
+    "@bara/core" "^2.5.0"
+    dot-prop "5.1.0"
+
 "@bara/basics@^2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@bara/basics/-/basics-2.3.1.tgz#27ec2f157f327af85b500a4ca31bdfb9f9a69334"
@@ -896,12 +905,27 @@
   dependencies:
     "@bara/core" "^2.3.1"
 
+"@bara/basics@^2.5.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@bara/basics/-/basics-2.6.0.tgz#2e6ba49abc76c666c55546c1685955cb28d870e5"
+  integrity sha512-BVXnjd4wAcF9QekEgIclRSbl+9LaBqJN6RiodocFCGnCDzsig7HBa9hQ2TnwFyDU5ndea5TnxdlolO/vzBj/Ig==
+  dependencies:
+    "@bara/core" "^2.5.0"
+    p-all "2.1.0"
+
 "@bara/core@^2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@bara/core/-/core-2.3.1.tgz#5b1efb982b2ce59e1325a9ed33fa7ffcede75c40"
   integrity sha512-8r+rwjHVWhMM9d4GTkNTM+OqHUGAVx/wUiOH+s68IiiBtnYTYlty/RQMKLE7uNcVHbPWvXArW9NLqQyPmQmAhA==
   dependencies:
     xstream "11.10.0"
+
+"@bara/core@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@bara/core/-/core-2.5.0.tgz#ed46482da421906808475d6f6918b80cee8bab97"
+  integrity sha512-fzYtkNaIInsSFxAI4AX2tWKm2dt1zkT3nE1DtcQs4ff2wEMvMsmdWmzBvFec868h8KjsVuGufut9CZs40npw7w==
+  dependencies:
+    xstream "11.11.0"
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
@@ -2170,13 +2194,13 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-bara-react@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/bara-react/-/bara-react-2.0.1.tgz#97f2664001c41138da1e29a2c174223984944a2a"
-  integrity sha512-CFUpGwUmgWtsFZ5moU/IvYhZHklF+CiTy8AiSlUbDUKZMT+Q65IZ9P4JfuBM6CZYzWsl1GfaXCWGtxg/lmlBxA==
+bara-react@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/bara-react/-/bara-react-3.1.1.tgz#ffb1de0e2b6f83d78f42f3918e31d8224761a064"
+  integrity sha512-lBqXWuoBbCjr0qxwqXEjbi9HVBLMwVjOhqkA+7/DKVFBXQv4BIMvD+QmAWFapIRVp8i/2LDwPlq8/BUxX16euw==
   dependencies:
-    bara "2.3.1"
-    react-native-web "0.11.2"
+    bara "^2.4.0"
+    react-native-web "^0.12.0"
 
 bara@2.3.1:
   version "2.3.1"
@@ -2186,6 +2210,15 @@ bara@2.3.1:
     "@bara/barn" "^2.3.1"
     "@bara/basics" "^2.3.1"
     "@bara/core" "^2.3.1"
+
+bara@^2.4.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/bara/-/bara-2.5.0.tgz#ab2095afe33be253bc335a9192a1b00e24e27998"
+  integrity sha512-eV4fYZSCBoR0xEeTK7gGwGNWatJXObp2Q1zt5g38aSAn/QOpDOEG+kiIDWFozaWhhy90Spu5CvtyinTMR5CJfQ==
+  dependencies:
+    "@bara/barn" "^2.5.0"
+    "@bara/basics" "^2.5.0"
+    "@bara/core" "^2.5.0"
 
 base64-js@^1.0.2:
   version "1.3.0"
@@ -3971,6 +4004,13 @@ dot-prop@5.0.0:
   dependencies:
     is-obj "^1.0.0"
 
+dot-prop@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.1.0.tgz#bdd8c986a77b83e3fca524e53786df916cabbd8a"
+  integrity sha512-n1oC6NBF+KM9oVXtjmen4Yo7HyAVWV2UUl50dCYJdw2924K6dX9bf9TTTWaKtYlRn0FEtxG27KS80ayVLixxJA==
+  dependencies:
+    is-obj "^2.0.0"
+
 dot-prop@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-3.0.0.tgz#1b708af094a49c9a0e7dbcad790aba539dac1177"
@@ -5606,7 +5646,7 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-hyphenate-style-name@^1.0.2:
+hyphenate-style-name@^1.0.2, hyphenate-style-name@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.3.tgz#097bb7fa0b8f1a9cf0bd5c734cf95899981a9b48"
   integrity sha512-EcuixamT82oplpoJ2XU4pDtKGWQ7b00CD9f1ug9IaQ3p1bkHMiKCZ9ut9QDI6qsa6cpUuB+A/I+zLtdNK4n2DQ==
@@ -5789,10 +5829,10 @@ init-package-json@^1.10.3:
     validate-npm-package-license "^3.0.1"
     validate-npm-package-name "^3.0.0"
 
-inline-style-prefixer@^5.0.3:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-5.1.0.tgz#cb63195f9456dcda25cf59743e45c4d9815b0811"
-  integrity sha512-giteQHPMrApQOSjNSjteO5ZGSGMRf9gas14fRy2lg2buSc1nRnj6o6xuNds5cMTKrkncyrTu3gJn/yflFMVdmg==
+inline-style-prefixer@^5.1.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-5.1.1.tgz#43074a2c6f2cdb7cb2e8116b23fd04c635188501"
+  integrity sha512-l2zxmdGF/QZNfR3b1hnPr0pkTZUSYYOCCO9zz/AAtaw/LNi1PpjzwumMIz+WKmVhqnWpDdaoqan7yOZM9u2ELQ==
   dependencies:
     css-in-js-utils "^2.0.0"
 
@@ -6133,6 +6173,11 @@ is-obj@^1.0.0, is-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
   integrity sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
+
+is-obj@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-2.0.0.tgz#473fb05d973705e3fd9620545018ca8e22ef4982"
+  integrity sha512-drqDG3cbczxxEJRoOXcOjtdp1J/lyp1mNn0xaznRs8+muBhgQcrnbspox5X5fOw0HnMnbfDzvnEMEtqDEJEo8w==
 
 is-path-cwd@^1.0.0:
   version "1.0.0"
@@ -8528,6 +8573,13 @@ osenv@0, osenv@^0.1.4, osenv@^0.1.5:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
+p-all@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/p-all/-/p-all-2.1.0.tgz#91419be56b7dee8fe4c5db875d55e0da084244a0"
+  integrity sha512-HbZxz5FONzz/z2gJfk6bFca0BCiSRF8jU3yCsWOen/vR6lZjfPOu/e7L3uFzTW1i0H8TlC3vqQstEJPQL4/uLA==
+  dependencies:
+    p-map "^2.0.0"
+
 p-defer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
@@ -8582,6 +8634,11 @@ p-map@^1.0.0, p-map@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/p-map/-/p-map-1.2.0.tgz#e4e94f311eabbc8633a1e79908165fca26241b6b"
   integrity sha512-r6zKACMNhjPJMTl8KcFH4li//gkrXWfbD6feV8l6doRHlzljFWGJ2AP6iKaCJXyZmAUMOPtvbW7EXkbWO/pLEA==
+
+p-map@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/p-map/-/p-map-2.1.0.tgz#310928feef9c9ecc65b68b17693018a665cea175"
+  integrity sha512-y3b8Kpd8OAN444hxfBbFfj1FY/RjtTd8tzYwhUqNYXx0fXx2iX4maP4Qr6qhIKbQXI02wTLAda4fYUbDagTUFw==
 
 p-reduce@^1.0.0:
   version "1.0.0"
@@ -9921,18 +9978,18 @@ react-native-vector-icons@6.4.2:
     prop-types "^15.6.2"
     yargs "^13.2.2"
 
-react-native-web@0.11.2:
-  version "0.11.2"
-  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.11.2.tgz#f3550589347be1f402f0641fefca687ca64a1750"
-  integrity sha512-EVUrBftCZBfUCOrwKJPh+hiGmDieBPL+5m+57BFg0UIH6uSmgvXK9r/xy6rQXLRMTgk3krDd94nRo3/31p69+A==
+react-native-web@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.12.1.tgz#9402a70fe4ebdd3b77ea5f387fa2f6c74fc4e3f7"
+  integrity sha512-CWhkGips1PPQn+AO+sfqJE6aBoG5v9dsMmhV9YEX0uo4fyHk369IE6eI5tBEgpSn3NPq6NnPk2mmnzLACyma1Q==
   dependencies:
     array-find-index "^1.0.2"
     create-react-class "^15.6.2"
     debounce "^1.2.0"
     deep-assign "^3.0.0"
     fbjs "^1.0.0"
-    hyphenate-style-name "^1.0.2"
-    inline-style-prefixer "^5.0.3"
+    hyphenate-style-name "^1.0.3"
+    inline-style-prefixer "^5.1.0"
     normalize-css-color "^1.0.2"
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.4"
@@ -12659,6 +12716,13 @@ xstream@11.10.0:
   version "11.10.0"
   resolved "https://registry.yarnpkg.com/xstream/-/xstream-11.10.0.tgz#55a2769672711220fda61678080c130a6401be3d"
   integrity sha512-jzFCiRqGtrJi2S1/RPxVFgJwWVBzy4suMPBXlhOi0BJC7VvsXgo2yOHWnOasnj24n2Dlj2Mgfl6fJXPOYmpHFA==
+  dependencies:
+    symbol-observable "1.2.0"
+
+xstream@11.11.0:
+  version "11.11.0"
+  resolved "https://registry.yarnpkg.com/xstream/-/xstream-11.11.0.tgz#2c963cf0a6cb3eafecb57eaeae16c9850235b422"
+  integrity sha512-0zF3PLsHrmbToPBgX1jYZFNw+t5octSFJgVRH44HGlGBBjY7gscvDQOZvty8IQV15Snia1RcLPECWDfEaE4aXg==
   dependencies:
     symbol-observable "1.2.0"
 
